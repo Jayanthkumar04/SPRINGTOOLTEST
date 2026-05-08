@@ -1,0 +1,239 @@
+HTTP/1.1 200 OK
+Cache-Control: must-revalidate, max-age=0
+Pragma: no-cache
+Server: HP HTTP Server; HP PageWide Pro 477dw MFP - D3Q20A; Serial Number: CN4C23P742; Built: Thu Aug 20, 2015 12:16:38PM {MAVEDWMP1N001.1534H.00}
+Content-Type: text/xml
+Content-Length: 2929
+
+<?xml version="1.0" encoding="UTF-8"?>
+<scc:ScannerCapabilities xmlns:scc="http://schemas.hp.com/imaging/escl/2011/05/03" xmlns:pwg="http://www.pwg.org/schemas/2010/12/sm">
+
+	<pwg:Version>1.90</pwg:Version>
+
+	<pwg:MakeAndModel>Hewlett-Packard Photosmart C4760</pwg:MakeAndModel>
+
+	<pwg:SerialNumber>CN017971874378PJ</pwg:SerialNumber>
+
+	<scc:SettingProfiles>
+
+		<scc:SettingProfile name="p1">
+
+			<scc:ColorModes>
+
+				<scc:ColorMode>BlackAndWhite1</scc:ColorMode>
+
+				<scc:ColorMode>Grayscale8</scc:ColorMode>
+
+			</scc:ColorModes>
+
+			<scc:DocumentFormats>
+
+				<pwg:DocumentFormat>application/pdf</pwg:DocumentFormat>
+
+				<pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+
+			</scc:DocumentFormats>
+
+			<scc:SupportedResolutions>
+
+				<scc:DiscreteResolutions>
+
+					<scc:DiscreteResolution>
+
+						<scc:XResolution>100</scc:XResolution>
+
+						<scc:YResolution>100</scc:YResolution>
+
+					</scc:DiscreteResolution>
+
+					<scc:DiscreteResolution>
+
+						<scc:XResolution>200</scc:XResolution>
+
+						<scc:YResolution>200</scc:YResolution>
+
+					</scc:DiscreteResolution>
+
+					<scc:DiscreteResolution>
+
+						<scc:XResolution>300</scc:XResolution>
+
+						<scc:YResolution>300</scc:YResolution>
+
+					</scc:DiscreteResolution>
+
+				</scc:DiscreteResolutions>
+
+			</scc:SupportedResolutions>
+
+			<scc:CcdChannels>
+
+				<scc:CcdChannel>Red</scc:CcdChannel>
+
+				<scc:CcdChannel scc:default="true">Blue</scc:CcdChannel>
+
+			</scc:CcdChannels>
+
+			<scc:BinaryRenderings>
+
+				<scc:BinaryRendering>Threshold</scc:BinaryRendering>
+
+				<scc:BinaryRendering scc:default="true">Halftone</scc:BinaryRendering>
+
+			</scc:BinaryRenderings>
+
+		</scc:SettingProfile>
+
+	</scc:SettingProfiles>
+
+	<scc:Platen>
+
+		<scc:PlatenInputCaps>
+
+			<scc:MinWidth>1</scc:MinWidth>
+
+			<scc:MaxWidth>3000</scc:MaxWidth>
+
+			<scc:MinHeight>1</scc:MinHeight>
+
+			<scc:MaxHeight>3600</scc:MaxHeight>
+
+			<scc:MaxScanRegions>2</scc:MaxScanRegions>
+
+			<scc:SettingProfiles>
+
+				<scc:SettingProfile>
+
+					<scc:ColorModes>
+
+						<scc:ColorMode>RGB24</scc:ColorMode>
+
+						<scc:ColorMode>Grayscale8</scc:ColorMode>
+
+						<scc:ColorMode>BlackAndWhite1</scc:ColorMode>
+
+					</scc:ColorModes>
+
+					<scc:DocumentFormats>
+
+						<pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+
+						<pwg:DocumentFormat>application/pdf</pwg:DocumentFormat>
+
+					</scc:DocumentFormats>
+
+					<scc:SupportedResolutions>
+
+						<scc:ResolutionRange>
+
+							<scc:XResolutionRange>
+
+								<scc:Min>75</scc:Min>
+
+								<scc:Max>1200</scc:Max>
+
+								<scc:Normal>300</scc:Normal>
+
+								<scc:Step>10</scc:Step>
+
+							</scc:XResolutionRange>
+
+							<scc:YResolutionRange>
+
+								<scc:Min>75</scc:Min>
+
+								<scc:Max>1200</scc:Max>
+
+								<scc:Normal>300</scc:Normal>
+
+								<scc:Step>10</scc:Step>
+
+							</scc:YResolutionRange>
+
+						</scc:ResolutionRange>
+
+					</scc:SupportedResolutions>
+
+					<scc:ColorSpaces>
+
+						<scc:ColorSpace scc:default="true">sRGB</scc:ColorSpace>
+
+					</scc:ColorSpaces>
+
+					<scc:CcdChannels>
+
+						<scc:CcdChannel>Red</scc:CcdChannel>
+
+						<scc:CcdChannel>Blue</scc:CcdChannel>
+
+						<scc:CcdChannel>Green</scc:CcdChannel>
+
+						<scc:CcdChannel scc:default="true">NTSC</scc:CcdChannel>
+
+					</scc:CcdChannels>
+
+					<scc:BinaryRenderings>
+
+						<scc:BinaryRendering scc:default="true">Halftone</scc:BinaryRendering>
+
+						<scc:BinaryRendering>Threshold</scc:BinaryRendering>
+
+					</scc:BinaryRenderings>
+
+				</scc:SettingProfile>
+
+				<scc:SettingProfile ref="p1"/>
+
+			</scc:SettingProfiles>
+
+			<scc:MaxOpticalXResolution>1200</scc:MaxOpticalXResolution>
+
+			<scc:MaxOpticalYResolution>1200</scc:MaxOpticalYResolution>
+
+		</scc:PlatenInputCaps>
+
+	</scc:Platen>
+
+	<scc:Adf>
+
+		<scc:AdfSimplexInputCaps>
+
+			<scc:MinWidth>1</scc:MinWidth>
+
+			<scc:MaxWidth>2600</scc:MaxWidth>
+
+			<scc:MinHeight>1</scc:MinHeight>
+
+			<scc:MaxHeight>3400</scc:MaxHeight>
+
+			<scc:SettingProfiles>
+
+				<scc:SettingProfile ref="p1"/>
+
+			</scc:SettingProfiles>
+
+			<scc:EdgeAutoDetection>
+
+				<scc:SupportedEdge>BottomEdge</scc:SupportedEdge>
+
+			</scc:EdgeAutoDetection>
+
+			<scc:MaxOpticalXResolution>300</scc:MaxOpticalXResolution>
+
+			<scc:MaxOpticalYResolution>300</scc:MaxOpticalYResolution>
+
+		</scc:AdfSimplexInputCaps>
+
+		<scc:FeederCapacity>100</scc:FeederCapacity>
+
+		<scc:AdfOptions>
+
+			<scc:AdfOption>DetectPaperLoaded</scc:AdfOption>
+
+			<scc:AdfOption>SelectSinglePage</scc:AdfOption>
+
+		</scc:AdfOptions>
+
+	</scc:Adf>
+
+</scc:ScannerCapabilities>

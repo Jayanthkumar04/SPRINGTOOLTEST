@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="serviceTestResourceLoader" class="com.hp.wpp.service.tests.ComponentTestResourceLoader"/>
+    
+    <!-- Override ServiceTokenGenerator with mock for integration tests -->
+    <bean id="serviceTokenGenerator" class="com.hp.wpp.service.mock.MockServiceTokenGenerator" primary="true">
+        <constructor-arg ref="avatarServiceConfig"/>
+    </bean>
+    
+    <import resource="classpath:applicationContext-avatar-scan.xml"/>
+
+<!--    <bean id="liquibase" class="liquibase.integration.spring.SpringLiquibase">
+        <property name="dataSource" ref="podServiceDS"/>
+        <property name="changeLog" value="classpath:optin-conf-mgmt/db.dev.changelog-master.xml"/>
+    </bean>-->
+
+</beans>

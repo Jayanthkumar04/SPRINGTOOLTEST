@@ -1,0 +1,59 @@
+<web-app id="WebApp_ID" version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>avatar-scan</display-name>
+
+    <context-param>
+        <param-name>resteasy.resources</param-name>
+        <param-value>com.hp.wpp.avatar.scan.resources.AvatarScanResource</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>resteasy.providers</param-name>
+        <param-value>com.hp.wpp.trace.filter.WppTraceRequestFilter,
+            com.hp.wpp.trace.filter.WppTraceResponseFilter</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:/applicationContext-avatar-scan.xml
+            classpath:/applicationContext-AvatarService.xml
+            classpath:/applicationContext-Connectivity.xml
+            classpath:/spring/applicationContext-xmpp.xml
+            classpath:/applicationContext-TunnelmgrClient.xml
+            classpath:/applicationContext-about.xml
+            classpath:applicationContext-config.xml
+        </param-value>
+    </context-param>
+	
+	<context-param>
+      <param-name>resteasy.resources</param-name>
+      <param-value>com.hp.wpp.healthcheck.web.resource.HealthResource</param-value>
+    </context-param>
+	
+    <listener>
+        <listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.jboss.resteasy.plugins.spring.SpringContextLoaderListener</listener-class>
+    </listener>
+
+    <!--<listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>-->
+
+    <servlet>
+        <servlet-name>resteasy-servlet</servlet-name>
+        <servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>resteasy-servlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>

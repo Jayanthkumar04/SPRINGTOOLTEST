@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 25
+Implementation-Title: avscn-restapi
+Implementation-Version: 1.1.32
+Artifact-Name: avscn-restapi
+Artifact-Version: 1.1.32
+Build-Time: 
+Created-By: Maven Integration for Eclipse
+SVN_Revision: 
+

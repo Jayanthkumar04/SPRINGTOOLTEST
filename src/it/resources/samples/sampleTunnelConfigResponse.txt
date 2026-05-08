@@ -1,0 +1,1 @@
+{"entity_id":"validPrinter123","wss_tunnel_configuration":[{"tunnel_type":"start_tunnel_2","connection_url":"http://websocket_mock/websocket","connected":true}]}

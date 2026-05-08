@@ -1,0 +1,7 @@
+HTTP/1.1 201 Created
+Cache-Control: no-cache, no-store, must-revalidate
+Location: http://localhost:8080/eSCL/ScanJobs/ea895c86-07aa-11e6-836f-000c29d168c5
+Server: HP HTTP Server; HP PageWide Pro 477dw MFP - D3Q20A; Serial Number: CN4C23P742; Built: Thu Aug 20, 2015 12:16:38PM {MAVEDWMP1N001.1534H.00}
+Content-Length: 0
+Date: Thu, 21 Jul 2016 13:30:24 GMT
+
